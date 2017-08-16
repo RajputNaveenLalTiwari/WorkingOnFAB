@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.examples.workingonfab.MainActivity">
+
+    <ImageButton
+        android:id="@+id/fabImageButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/oval_ripple"
+        android:src="@drawable/fab_plus"
+        android:elevation="6dp"
+        android:stateListAnimator="@anim/fab_raise"
+        android:layout_margin="16dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/fab_plus"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@+id/fabImageButton"
+        />
+
+    <RelativeLayout
+        android:id="@+id/circularRevealAnimationViewID"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary">
+
+    </RelativeLayout>
+
+</RelativeLayout>
